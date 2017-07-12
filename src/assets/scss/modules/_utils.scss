@@ -1,0 +1,67 @@
+$bg-prin: #21B2A6;
+$bg-sec: #2B343D;
+
+$bg-btn: #ED4933;
+
+$bg-ter:#505393;
+$bg-ter-colors:#4E508E,#4B4D89,#45487F,#505393,#42457A,#3F4275;
+
+$co-white: #ffffff;
+/*nth($bg-ter-colors,2);*/
+
+
+@mixin fonts($size,$bold,$line-height,$letter-spacing,$pad){
+    font-size: $size;
+    color: $co-white;
+    font-weight: $bold;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    padding: $pad;
+}
+
+/*TRANSITION ALL WEB BROWSER*/
+.transition {    
+    -webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+.pd-left-rigth{
+    padding:0px 1em!important;
+}
+
+.margin-auto{
+    padding: 5.5em 1.5em 2em 1.5em!important;
+}
+
+.learn{
+    background: none;
+    border: 1px solid $co-white;
+    border-radius: 5px;
+    @include fonts(1em,normal,normal,5px,10px 40px);
+}
+
+.adopte{
+    background: $bg-btn;
+    border: none;
+    border-radius: 5px;
+    @include fonts(1em,normal,normal,5px,10px 40px);
+}
+
+.show{
+    background-color: $bg-sec !important;
+}
+
+.mg-auto{
+     margin: auto;
+}
+.pd-nav-r{
+    padding-right: 4em;
+}
+.pd-nav-l{
+    padding-left: 4em;
+}
+.pd-left{
+    padding-left: 2.5em!important;
+}

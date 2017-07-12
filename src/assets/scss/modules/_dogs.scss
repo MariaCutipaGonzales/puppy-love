@@ -1,0 +1,25 @@
+.dogs{
+    width: 100%;
+    height: auto;
+    background-color:$bg-sec;
+      &__title{
+          @include fonts(1.3em,900,150%,5px,3em 0px 0px 2em);
+      }
+      &__text{
+          @include fonts(1.2em,normal,150%,3px,2em 2.5em 30px 2em);
+      }
+      &__icons{
+          >img{
+              padding: 1.5em;
+          }  
+      }
+      &--border{
+          border-bottom: 4px solid #2AA99E;
+      }
+    .row{
+            padding: 0;
+        }
+        .col{
+            padding: 0;
+        }
+}

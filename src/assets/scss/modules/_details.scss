@@ -1,0 +1,19 @@
+.details{
+    width: 100%;
+    height: auto;
+    background: $bg-prin;
+      &__title{
+          @include fonts(1.3em,900,150%,5px,3.5em 0px 10px 0px);
+      }
+      &__text{
+          @include fonts(1.2em,normal,150%,3px,30px 4em 30px 3em);
+      }
+      &__icons{
+          >img{
+              padding:2em 4em 5em 4em;
+          }  
+      }
+      &--border{
+          border-bottom: 4px solid #2AA99E;
+      }
+}

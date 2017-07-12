@@ -1,0 +1,41 @@
+$bg-ter:#505393;
+$bg-ter-colors:#4E508E,#4B4D89,#45487F,#505393,#42457A,#3F4275;
+
+
+%cube{
+    height: 300px;
+}
+.detailstwo{
+    background-color: $bg-ter;
+    height: auto; 
+    &__title{
+         @include fonts(1em,normal,150%,3px,1em 1em!important);
+    }
+    &__text{
+         @include fonts(1em,normal,120%,0.1em,0px);
+    }
+    &--one{
+        background: nth($bg-ter-colors,1);
+        @extend %cube;
+    }
+    &--two{
+        background: nth($bg-ter-colors,5);
+        @extend %cube;
+    }
+    &--three{
+        background: nth($bg-ter-colors,3);
+        @extend %cube;
+    }
+    &--four{
+        background: nth($bg-ter-colors,1);
+        @extend %cube;
+    }
+    &--five{
+        background: nth($bg-ter-colors,5);
+        @extend %cube;
+    }
+    &--six{
+        background: nth($bg-ter-colors,2);
+        @extend %cube;
+    }
+}
